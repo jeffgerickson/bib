@@ -1,12 +1,84 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jeff Erickson at 2025-03-23 15:31:46 -0500 
+%% Created for Jeff Erickson at 2025-06-25 11:33:40 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{ss-scokh-90,
+	abstract = { The problem of constructing a dense static hash-based lookup table T for a set of n elements belonging to a universe \$U = \{ 0, 1, 2,\cdots , m -1 \}\$ is considered. Nearly tight bounds on the spatial complexity of oblivious \$O(1)\$-probe hash functions, which are defined to depend solely on their search key argument, are provided. This establishes a significant gap between oblivious and nonoblivious search. In particular, the results include the following: * A lower bound showing that oblivious k-probe hash functions require a program size of \$\Omega(({n / k}^{2})e^{-k}+\log \log m)\$ bits, on average. * A probabilistic construction of a family of oblivious k-probe hash functions that can be specified in \$O(n e^{-k} +\log \log m)\$ bits, which nearly matches the above lower bound. * A variation of an explicit \$O(1)\$ time 1-probe (perfect) hash function family that can be specified in \$O(n+\log \log m)\$ bits, which is tight to within a constant factor of the lower bound. },
+	author = {Schmidt, Jeanette P. and Siegel, Alan},
+	date-added = {2025-06-25 10:36:27 -0500},
+	date-modified = {2025-06-25 10:36:56 -0500},
+	doi = {10.1137/0219054},
+	journal = {SIAM J. Comput.},
+	number = {5},
+	pages = {775--786},
+	title = {The Spatial Complexity of Oblivious $k$-Probe Hash Functions},
+	volume = {19},
+	year = {1990}}
+
+@inproceedings{b-snta-68,
+	abstract = {To achieve high throughput rates today's computers perform several operations simultaneously. Not only are I/O operations performed concurrently with computing, but also, in multiprocessors, several computing operations are done concurrently. A major problem in the design of such a computing system is the connecting together of the various parts of the system (the I/O devices, memories, processing units, etc.) in such a way that all the required data transfers can be accommodated. One common scheme is a high-speed bus which is time-shared by the various parts; speed of available hardware limits this scheme. Another scheme is a cross-bar switch or matrix; limiting factors here are the amount of hardware (an m \texttimes{} n matrix requires m \texttimes{} n cross-points) and the fan-in and fan-out of the hardware.},
+	author = {Batcher, Kenneth E.},
+	booktitle = {Proc. AFIPS Spring Joint Computer Conference},
+	date-added = {2025-05-19 11:18:11 -0500},
+	date-modified = {2025-05-19 11:22:19 -0500},
+	doi = {10.1145/1468075.1468121},
+	number = {32},
+	pages = {307--314},
+	series = {{AFIPS} Conf. Proc.},
+	title = {Sorting networks and their applications},
+	url = {https://oaks.kent.edu/kenneth-e-batcher-collection/sorting-networks-and-their-applications},
+	year = {1968},
+	bdsk-url-1 = {https://oaks.kent.edu/kenneth-e-batcher-collection/sorting-networks-and-their-applications},
+	bdsk-url-2 = {https://doi.org/10.1145/1468075.1468121}}
+
+@article{ah-ipisw-97,
+	abstract = {We show thatnintegers in the range 1,{\ldots},ncan be sorted stably on an EREW PRAM usingO(t) time andO(n(lognloglogn+(logn)2/t)) operations, for arbitrary givent⩾lognloglogn, and on a CREW PRAM usingO(t) time andO(n(logn+logn/2t/logn)) operations, for arbitrary givent⩾logn. In addition, we are able to sortnarbitrary integers on a randomized CREW PRAM within the same resource bounds with high probability. In each case our algorithm is a factor of almostΘ:(logn) closer to optimality than all previous algorithms for the stated problem in the stated model, and our third result matches the operation count of the best previous sequential algorithm. We also show thatnintegers in the range 1,{\ldots},mcan be sorted inO((logn)2) time withO(n) operations on an EREW PRAM using a nonstandard word length ofO(lognloglognlogm) bits, thereby greatly improving the upper bound on the word length necessary to sort integers with a linear time--processor product, even sequentially. Our algorithms were inspired by, and in one case directly use, the fusion trees of Fredman and Willard.},
+	author = {Albers, Susanne and Hagerup, Torben},
+	date-added = {2025-05-19 11:12:45 -0500},
+	date-modified = {2025-05-19 11:13:11 -0500},
+	doi = {10.1006/inco.1997.2632},
+	journal = {Inf. Comput.},
+	number = {1},
+	pages = {25--51},
+	title = {Improved Parallel Integer Sorting without Concurrent Writing},
+	volume = {136},
+	year = {1997},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/S0890540197926328},
+	bdsk-url-2 = {https://doi.org/10.1006/inco.1997.2632}}
+
+@article{ahnr-slt-98,
+	abstract = {We show that a unit-cost RAM with a word length ofwbits can sortnintegers in the range 0{\ldots}2w−1 inO(nloglogn) time for arbitraryw⩾logn, a significant improvement over the bound ofO(nlogn) achieved by the fusion trees of Fredman and Willard. Provided thatw⩾(logn)2+εfor some fixedε>0, the sorting can even be accomplished in linear expected time with a randomized algorithm. Both of our algorithms parallelize without loss on a unit-cost PRAM with a word length ofwbits. The first one yields an algorithm that usesO(logn) time andO(nloglogn) operations on a deterministic CRCW PRAM. The second one yields an algorithm that usesO(logn) expected time andO(n) expected operations on a randomized EREW PRAM, provided thatw⩾(logn)2+εfor some fixedε>0. Our deterministic and randomized sequential and parallel algorithms generalize to the lexicographic sorting of multiple-precision integers represented in several words.},
+	author = {Andersson, Arne and Hagerup, Torben and Nilsson, Stefan and Raman, Rajeev},
+	date-added = {2025-05-17 16:07:39 +0200},
+	date-modified = {2025-05-17 16:07:57 +0200},
+	doi = {10.1006/jcss.1998.1580},
+	journal = {J. Comput. Syst. Sci.},
+	number = {1},
+	pages = {74--93},
+	title = {Sorting in Linear Time?},
+	volume = {57},
+	year = {1998},
+	bdsk-url-1 = {https://doi.org/10.1006/jcss.1998.1580}}
+
+@article{kr-ubsir-83,
+	abstract = {The complexity of integer sorting is investigated on two random access machine (RAM) models. The main results show that (i) on a RAM with addition, subtraction, multiplication and integer division, n integers in the range [0, 2cn) can be sorted in O(n(1 + log c)) steps, (ii) on a RAM with addition, subtraction, and left and right shifts, n integers in any range can be sorted in linear time, and (iii) on either of the above models, n integers in the range [0, nc can be sorted in O(n(1 + log c)) steps, even if all register addresses and capacities are bounded above by nc.},
+	author = {Kirkpatrick, David and Reisch, Stefan},
+	date-added = {2025-05-17 16:05:02 +0200},
+	date-modified = {2025-05-17 16:05:25 +0200},
+	doi = {10.1016/0304-3975(83)90023-3},
+	journal = {Theor. Comput. Sci.},
+	number = {3},
+	pages = {263--276},
+	title = {Upper bounds for sorting integers on random access machines},
+	volume = {28},
+	year = {1983},
+	bdsk-url-1 = {https://doi.org/10.1016/0304-3975(83)90023-3}}
 
 @inproceedings{ds-amol-87,
 	abstract = {The order maintenance problem is that of maintaining a list under a sequence of Insert and Delete operations, while answering Order queries (determine which of two elements comes first in the list). We give two new algorithms for this problem. The first algorithm matches the O(1) amortized time per operation of the best previously known algorithm, and is much simpler. The second algorithm permits all operations to be performed in O(1) worst-case time.},
@@ -32,7 +104,8 @@
 	pages = {30:1--30:26},
 	title = {Rank-Balanced Trees},
 	volume = {11},
-	year = {2015}}
+	year = {2015},
+	bdsk-url-1 = {https://doi.org/10.1145/2689412}}
 
 @article{h-z-97,
 	author = {Huet, G{\'e}rard},
@@ -1579,7 +1652,8 @@
 	publisher = {Springer},
 	series = {Lecture Notes Comput. Sci.},
 	title = {Two Simplified Algorithms for Maintaining Order in a List},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://doi.org/10.1007/3-540-45749-6_17}}
 
 @inproceedings{ikr-stipq-81,
 	author = {Itai, Alon and Konheim, Alan G. and Rodeh, Michael},
