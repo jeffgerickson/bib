@@ -1,13 +1,336 @@
 %% This BibTeX bibliography file was created using BibDesk.
-%% http://bibdesk.sourceforge.net/
+%% https://bibdesk.sourceforge.io/
 
-
-%% Created for Jeff Erickson at 2021-06-25 11:17:34 -0500 
+%% Created for Jeff Erickson at 2025-07-05 17:32:01 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{v-adsem-08,
+	author = {Vitter, Jeffrey Scott},
+	date-added = {2025-07-05 15:57:08 -0500},
+	date-modified = {2025-07-05 15:58:32 -0500},
+	doi = {10.1561/0400000014},
+	journal = {Foundations and Trends{\textregistered} in Theoretical Computer Science},
+	number = {4},
+	pages = {305--474},
+	title = {Algorithms and Data Structures for External Memory},
+	volume = {2},
+	year = {2008},
+	bdsk-url-1 = {http://dx.doi.org/10.1561/0400000014}}
+
+@article{v-emads-01,
+	abstract = {Data sets in large applications are often too massive to fit completely inside the computers internal memory. The resulting input/output communication (or I/O) between fast internal memory and slower external memory (such as disks) can be a major performance bottleneck. In this article we survey the state of the art in the design and analysis of external memory (or EM) algorithms and data structures, where the goal is to exploit locality in order to reduce the I/O costs. We consider a variety of EM paradigms for solving batched and online problems efficiently in external memory. For the batched problem of sorting and related problems such as permuting and fast Fourier transform, the key paradigms include distribution and merging. The paradigm of disk striping offers an elegant way to use multiple disks in parallel. For sorting, however,  disk striping can be nonoptimal with respect to I/O, so to gain further improvements we discuss distribution and merging techniques for using the disks independently. We also consider useful techniques for batched EM problems involving matrices (such as matrix multiplication and transposition), geometric data (such as finding intersections and constructing convex hulls), and graphs (such as list ranking, connected components, topological sorting, and shortest paths). In the online domain, canonical EM applications include dictionary lookup and range searching. The two important classes of indexed data structures are based upon extendible hashing and B-trees. The paradigms of filtering and bootstrapping provide a convenient means in online data structures to make effective use of the data accessed from disk. We also reexamine some of the above EM problems in slightly different settings, such as when the data items are moving, when the data items are variable-length (e.g., text strings), or when the allocated amount of internal memory can change dynamically. Programming tools and environments are available for simplifying the EM programming task. During the course of the survey, we report on some experiments in the domain of spatial databases using the TPIE system (transparent parallel I/O programming environment). The newly developed EM algorithms and data structures that incorporate the paradigms we discuss are significantly faster than methods currently used in practice.},
+	author = {Vitter, Jeffrey Scott},
+	date-added = {2025-07-05 15:51:11 -0500},
+	date-modified = {2025-07-05 17:31:49 -0500},
+	doi = {10.1145/384192.384193},
+	journal = {ACM Comput. Surv.},
+	keywords = {B-tree, I/O, batched, block, disk, dynamic, extendible hashing, external memory, hierarchical memory, multidimensional access methods, multilevel memory, online, out-of-core, secondary storage, sorting},
+	number = {2},
+	pages = {209--271},
+	title = {External memory algorithms and data structures: {Dealing} with {{\Large Massive Data}}},
+	volume = {33},
+	year = {2001},
+	bdsk-url-1 = {https://doi.org/10.1145/384192.384193}}
+
+@article{av-icsrp-88,
+	abstract = {We provide tight upper and lower bounds, up to a constant factor, for the number of inputs and outputs (I/OS) between internal memory and secondary storage required for five sorting-related problems: sorting, the fast Fourier transform (FFT), permutation networks, permuting, and matrix transposition. The bounds hold both in the worst case and in the average case, and in several situations the constant factors match. Secondary storage is modeled as a magnetic disk capable of transferring P blocks each containing B records in a single time unit; the records in each block must be input from or output to B contiguous locations on the disk. We give two optimal algorithms for the problems, which are variants of merge sorting and distribution sorting. In particular we show for P = 1 that the standard merge sorting algorithm is an optimal external sorting method, up to a constant factor in the number of I/Os. Our sorting algorithms use the same number of I/Os as does the permutation phase of key sorting, except when the internal memory size is extremely small, thus affirming the popular adage that key sorting is not faster. We also give a simpler and more direct derivation of Hong and Kung's lower bound for the FFT for the special case B = P = O(1).},
+	author = {Aggarwal, Alok and Vitter, Jeffrey Scott},
+	date-added = {2025-07-05 15:49:12 -0500},
+	date-modified = {2025-07-05 15:49:59 -0500},
+	doi = {10.1145/48529.48535},
+	journal = {Commun. ACM},
+	number = {9},
+	pages = {1116--1127},
+	title = {The input/output complexity of sorting and related problems},
+	volume = {31},
+	year = {1988}}
+
+@article{acfs-umhmc-94,
+	abstract = {TheUniform Memory Hierarchy (UMH) model introduced in this paper captures performance-relevant aspects of the hierarchical nature of computer memory. It is used to quantify architectural requirements of several algorithms and to ratify the faster speeds achieved by tuned implementations that use improved data-movement strategies.},
+	author = {Alpern, Bowen and Carter, Larry and Feig, Ephraim and Selker:, Ted},
+	date-added = {2025-07-05 15:44:18 -0500},
+	date-modified = {2025-07-05 15:44:58 -0500},
+	doi = {10.1007/BF01185206},
+	journal = {Algorithmica},
+	number = {2},
+	pages = {72--109},
+	title = {The uniform memory hierarchy model of computation},
+	volume = {12},
+	year = {1994},
+	bdsk-url-1 = {https://doi.org/10.1007/BF01185206}}
+
+@inproceedings{acs-hmwbt-87,
+	author = {Aggarwal, Alok and Chandra, Ashok K. and Snir, Marc},
+	booktitle = {Proc. 28th Ann. ACM Symp. Theory Comput.},
+	date-added = {2025-07-05 15:40:44 -0500},
+	date-modified = {2025-07-05 15:41:09 -0500},
+	doi = {10.1109/SFCS.1987.31},
+	pages = {204--216},
+	title = {Hierarchical Memory with Block Transfer},
+	year = {1987}}
+
+@inproceedings{aacs-mhm-87,
+	abstract = {In this paper we introduce the Hierarchical Memory Model (HMM) of computation. It is intended to model computers with multiple levels in the memory hierarchy. Access to memory location x is assumed to take time ⌈ log x ⌉. Tight lower and upper bounds are given in this model for the time complexity of searching, sorting, matrix multiplication and FFT. Efficient algorithms in this model utilize locality of reference by bringing data into fast memory and using them several times before returning them to slower memory. It is shown that the circuit simulation problem has inherently poor locality of reference. The results are extended to HMM's where memory access time is given by an arbitrary (nondecreasing) function. Tight upper and lower bounds are obtained for HMM's with polynomial memory access time; the algorithms for searching, FFT and matrix multiplication are shown to be optimal for arbitrary memory access time. On-line memory management algorithms for the HMM model are also considered. An algorithm that uses LRU policy at the successive ``levels'' of the memory hierarchy is shown to be optimal.},
+	author = {Aggarwal, Alok and Alpern, Bowen and Chandra, Ashok and Snir, Marc},
+	booktitle = {Proc. 19th Ann. ACM Symp. Theory Comput.},
+	date-added = {2025-07-05 15:34:40 -0500},
+	date-modified = {2025-07-05 15:35:27 -0500},
+	doi = {10.1145/28395.28428},
+	pages = {305--314},
+	title = {A model for hierarchical memory},
+	year = {1987}}
+
+@article{v-eicvm-21,
+	abstract = {The information capacity of the universe has been a topic of great debate since the 1970s and continues to stimulate multiple branches of physics research. Here, we used Shannon's information theory to estimate the amount of encoded information in all the visible matter in the universe. We achieved this by deriving a detailed formula estimating the total number of particles in the observable universe, known as the Eddington number, and by estimating the amount of information stored by each particle about itself. We determined that each particle in the observable universe contains 1.509 bits of information and there are ∼6 × 1080 bits of information stored in all the matter particles of the observable universe.},
+	arxiv = {2112.04473},
+	author = {Vopson, Melvin M.},
+	date-added = {2025-07-04 20:18:17 -0500},
+	date-modified = {2025-07-04 20:18:59 -0500},
+	doi = {10.1063/5.0064475},
+	journal = {AIP Adv.},
+	number = {10},
+	pages = {105317},
+	title = {Estimation of the information contained in the visible matter of the universe},
+	volume = {11},
+	year = {2021},
+	bdsk-url-1 = {https://doi.org/10.1063/5.0064475}}
+
+@article{b-hp-02,
+	arxiv = {hep-th/0203101},
+	author = {Bousso, Raphael},
+	date-added = {2025-07-04 20:10:26 -0500},
+	date-modified = {2025-07-04 20:11:09 -0500},
+	doi = {10.1103/RevModPhys.74.825},
+	journal = {Rev. Mod. Phys.},
+	number = {3},
+	pages = {825--874},
+	title = {The holographic principle},
+	volume = {74},
+	year = {2002}}
+
+@inproceedings{h-drqg-09,
+	arxiv = {gr-qc/9310026},
+	author = {Hooft, Gerard 't},
+	booktitle = {Salamfestschrift},
+	date-added = {2025-07-04 18:57:55 -0500},
+	date-modified = {2025-07-04 19:08:38 -0500},
+	editor = {Aly, A. and Ellis, J. and Randjbar--Daemi, S.},
+	number = {4},
+	pages = {284--296},
+	publisher = {World Scientific},
+	series = {World Scientific Series in 20th Century Physics},
+	title = {Dimensional Reduction in Quantum Gravity},
+	year = {2009},
+	bdsk-url-1 = {https://arxiv.org/abs/gr-qc/9310026}}
+
+@article{s-wh-95,
+	abstract = {According to 't Hooft the combination of quantum mechanics and gravity requires the three‐dimensional world to be an image of data that can be stored on a two‐dimensional projection much like a holographic image. The two‐dimensional description only requires one discrete degree of freedom per Planck area and yet it is rich enough to describe all three‐dimensional phenomena. After outlining 't Hooft's proposal we give a preliminary informal description of how it may be implemented. One finds a basic requirement that particles must grow in size as their momenta are increased far above the Planck scale. The consequences for high‐energy particle collisions are described. The phenomenon of particle growth with momentum was previously discussed in the context of string theory and was related to information spreading near black hole horizons. The considerations of this paper indicate that the effect is much more rapid at all but the earliest times. In fact the rate of spreading is found to saturate the bound from causality. Finally we consider string theory as a possible realization of 't Hooft's idea. The light front lattice string model of Klebanov and Susskind is reviewed and its similarities with the holographic theory are demonstrated. The agreement between the two requires unproven but plausible assumptions about the nonperturbative behavior of string theory. Very similar ideas to those in this paper have long been held by Charles Thorn.},
+	arxiv = {hep-th/9409089},
+	author = {Susskind, Leonard},
+	date-added = {2025-07-04 18:56:24 -0500},
+	date-modified = {2025-07-04 18:57:15 -0500},
+	doi = {10.1063/1.531249},
+	journal = {J. Math. Phys.},
+	number = {11},
+	pages = {6377--6396},
+	title = {The world as a hologram},
+	volume = {36},
+	year = {1995},
+	bdsk-url-1 = {https://doi.org/10.1063/1.531249}}
+
+@article{b-debw-05,
+	abstract = {According to the universal entropy bound, the entropy (and hence information capacity) of a complete weakly self-gravitating physical system can be bounded exclusively in terms of its circumscribing radius and total gravitating energy. The bound's correctness is supported by explicit statistical calculations of entropy, gedanken experiments involving the generalized second law, and Bousso's covariant holographic bound. On the other hand, it is not always obvious in a particular example how the system avoids having too many states for given energy, and hence violating the bound. We analyze in detail several purported counterexamples of this type, and exhibit in each case the mechanism behind the bound's efficacy.},
+	author = {Bekenstein, Jacob D.},
+	date-added = {2025-07-04 18:50:18 -0500},
+	date-modified = {2025-07-04 18:50:39 -0500},
+	doi = {10.1007/s10701-005-7350-7},
+	journal = {Found. Phys.},
+	number = {11},
+	pages = {1805--1823},
+	title = {How does the Entropy/Information Bound Work?},
+	volume = {35},
+	year = {2005}}
+
+@misc{gj-waopc-22,
+	arxiv = {2206.13851},
+	author = {Grandjean, Etienne and Jachiet, Louis},
+	date-added = {2025-07-04 18:16:39 -0500},
+	date-modified = {2025-07-04 18:17:32 -0500},
+	doi = {10.48550/ARXIV.2206.13851},
+	howpublished = {Preprint},
+	title = {Which arithmetic operations can be performed in constant time in the {RAM} model with addition?},
+	year = {2022}}
+
+@article{g-mqs-89,
+	abstract = {THE method of quarter squares consists in the use of the formula ab = ¼(a+b)2 - ¼(a-b)2 to effect the multiplication of two numbers, a and b. If we are provided with a table giving the values of ¼n2 up to a given value of n, we may obtain, by the aid of this formula, without performing any multiplication, the product of any two numbers whose sum does not exceed the limit of the table.},
+	author = {Glaisher, James W. L.},
+	date-added = {2025-07-04 16:08:48 -0500},
+	date-modified = {2025-07-04 16:14:25 -0500},
+	doi = {10.1038/040573c0},
+	journal = {Nature},
+	number = {1041},
+	pages = {573--576},
+	title = {The Method of Quarter Squares1},
+	volume = {40},
+	year = {1889},
+	bdsk-url-1 = {https://doi.org/10.1038/040573c0}}
+
+@article{fss-pcph-84,
+	abstract = {A super-polynomial lower bound is given for the size of circuits of fixed depth computing the parity function. Introducing the notion of polynomial-size, constant-depth reduction, similar results are shown for the majority, multiplication, and transitive closure functions. Connections are given to the theory of programmable logic arrays and to the relativization of the polynomial-time hierarchy.},
+	author = {Furst, Merrick and Saxe, James B. and Sipser, Michael},
+	date-added = {2025-07-04 15:21:51 -0500},
+	date-modified = {2025-07-04 15:22:11 -0500},
+	doi = {10.1007/BF01744431},
+	journal = {Math. Sys. Theory},
+	number = {1},
+	pages = {13--27},
+	title = {Parity, circuits, and the polynomial-time hierarchy},
+	volume = {17},
+	year = {1984}}
+
+@article{k-eapr-59,
+	author = {Kaphengst, Heinz},
+	date-added = {2025-07-03 17:29:23 -0500},
+	date-modified = {2025-07-03 17:37:28 -0500},
+	journal = {Z. math. Logik und Gr{\"u}ndlagen. Math. [Math. Logic Quarterly]},
+	number = {14-24},
+	pages = {366--379},
+	title = {Eine {Abstrakte} {Programmgesteuerte} {Rechenmaschine}},
+	volume = {5},
+	year = {1959}}
+
+@article{er-rsmap-64,
+	author = {Elgot, Calvin C. and Robinson, Abraham},
+	date-added = {2025-07-03 17:22:15 -0500},
+	date-modified = {2025-07-03 17:22:41 -0500},
+	doi = {10.1145/321239.321240},
+	journal = {J. ACM},
+	number = {4},
+	pages = {365--399},
+	title = {Random-Access Stored-Program Machines, an Approach to Programming Languages},
+	volume = {11},
+	year = {1964},
+	bdsk-url-1 = {https://doi.org/10.1145/321239.321240}}
+
+@article{m-iaacc-61,
+	author = {Melzak, Zdzislaw A..},
+	date-added = {2025-07-03 17:02:34 -0500},
+	date-modified = {2025-07-03 17:04:13 -0500},
+	doi = {10.4153/CMB-1961-031-9},
+	journal = {Canad. Math. Bull.},
+	number = {3},
+	pages = {279---293},
+	title = {An Informal Arithmetical Approach to Computability and Computation},
+	volume = {4},
+	year = {1961},
+	bdsk-url-1 = {https://doi.org/10.4153/CMB-1961-031-9}}
+
+@article{h-ccras-71,
+	abstract = {In this paper we explore the computational complexity measure defined by running times of programs on random access stored program machines, RASP's. The purpose of this work is to study more realistic complexity measures and to provide a setting and some techniques to explore different computer organizations. The more interesting results of this paper are obtained by an argument about the size of the computed functions. For example, we show (without using diagonalization) that there exist arbitrarily complex functions with optimal RASP programs whose running time cannot be improved by any multiplicative constant. We show, furthermore, that these optimal programs cannot be fixed procedures and determine the difference in computation speed between fixed procedures and self-modifying programs. The same technique is used to compare computation speed of machines with and without built-in multiplication. We conclude the paper with a look at machines with associative memory and distributed logic machines.},
+	author = {Hartmanis, Juris},
+	date-added = {2025-07-03 16:47:57 -0500},
+	date-modified = {2025-07-03 16:49:53 -0500},
+	doi = {10.1007/BF01694180},
+	journal = {Math. Systems Theory},
+	keywords = {RAM, RASP},
+	number = {3},
+	pages = {232--245},
+	title = {Computational complexity of random access stored program machines},
+	volume = {5},
+	year = {1971},
+	bdsk-url-1 = {https://doi.org/10.1007/BF01694180}}
+
+@article{ss-crf-63,
+	author = {Shepherdson, John C. and Sturgis, Howard E.},
+	date-added = {2025-07-03 16:43:26 -0500},
+	date-modified = {2025-07-03 16:47:54 -0500},
+	doi = {10.1145/321160.321170},
+	journal = {J. ACM},
+	number = {2},
+	pages = {217--255},
+	title = {Computability of Recursive Functions},
+	volume = {10},
+	year = {1963},
+	bdsk-url-1 = {https://doi.org/10.1145/321160.321170}}
+
+@article{e-ecpa-70,
+	abstract = {A parsing algorithm which seems to be the most efficient general context-free algorithm known is described. It is similar to both Knuth's LR(k) algorithm and the familiar top-down algorithm. It has a time bound proportional to n3 (where n is the length of the string being parsed) in general; it has an n2 bound for unambiguous grammars; and it runs in linear time on a large class of grammars, which seems to include most practical context-free programming language grammars. In an empirical comparison it appears to be superior to the top-down and bottom-up algorithms studied by Griffiths and Petrick.},
+	author = {Earley, Jay},
+	date-added = {2025-07-03 16:40:21 -0500},
+	date-modified = {2025-07-03 17:15:50 -0500},
+	doi = {10.1145/362007.362035},
+	journal = {Commun. ACM},
+	keywords = {compilers, computational complexity, context-free grammar, parsing, syntax analysis, random-access machine},
+	number = {2},
+	pages = {94--102},
+	title = {An efficient context-free parsing algorithm},
+	volume = {13},
+	year = {1970},
+	bdsk-url-1 = {https://doi.org/10.1145/362007.362035}}
+
+@incollection{e-mms-90,
+	abstract = {Publisher Summary
+This chapter discusses machine models and simulations. The existence of many different machine models does not necessarily mean that there are no uniform underlying notions of computational complexity. In the theory of computation, a large variety of models and formal calculi has been proposed to capture the notion of effective computation. This has not lead to a proliferation of computation theories, because of the basic fact that the proposed formalisms have all been shown to be equivalent in the following sense---each computation in one formalism can be simulated by a computation in the other formalism. From the equivalence, it can be concluded that if a problem is unsolvable in one particular model, then it is also unsolvable for all other formalized computing devices to which this particular model is related by mutual simulation. Consequently the notion of solvability does not really depend on the model used. The basic models of computation themselves remain on the shelf, to be used if and when needed.},
+	author = {van {Emde Boas}, Peter},
+	booktitle = {Algorithms and Complexity},
+	chapter = {1},
+	date-added = {2025-07-03 16:24:18 -0500},
+	date-modified = {2025-07-03 16:25:59 -0500},
+	doi = {doi.org/10.1016/B978-0-444-88071-0.50006-0},
+	editor = {{van Leeuwen}, Jan},
+	pages = {1--66},
+	publisher = {Elsevier},
+	series = {Handbook of Theoretical Computer Science},
+	title = {Machine Models and Simulations},
+	year = {1990},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/B9780444880710500060},
+	bdsk-url-2 = {https://doi.org/10.1016/B978-0-444-88071-0.50006-0}}
+
+@article{s-diucr-81,
+	abstract = {We study the power of RAM acceptors with several instruction sets. We exhibit several instances where the availability of the division operator increases the power of the acceptors. We also show that in certain situations parallelism and stochastic features (``distributed random choices'') are provably more powerful than either parallelism or randomness alone. We relate the class of probabilistic Turing machine computations to random access machines with multiplication (but without boolean vector operations). Again, the availability of integer division seems to play a crucial role in these results.},
+	author = {Simon, Janos},
+	date-added = {2025-07-03 16:17:22 -0500},
+	date-modified = {2025-07-03 16:17:35 -0500},
+	doi = {https://doi.org/10.1016/0022-0000(81)90041-6},
+	journal = {J. Comput. Syst. Sci.},
+	number = {3},
+	pages = {421--441},
+	title = {Division in idealized unit cost RAMs},
+	volume = {22},
+	year = {1981},
+	bdsk-url-1 = {https://doi.org/10.1016/0022-0000(81)90041-6}}
+
+@inproceedings{b-cwwal-13,
+	abstract = {In the study of random access machines (RAMs) it has been shown that the availability of an extra input integer, having no special properties other than being sufficiently large, is enough to reduce the computational complexity of some problems. However, this has only been shown so far for specific problems. We provide a characterization of the power of such extra inputs for general problems.},
+	author = {Brand, Michael},
+	booktitle = {Theory and Applications of Models of Computation},
+	date-added = {2025-07-03 16:08:04 -0500},
+	date-modified = {2025-07-03 16:08:30 -0500},
+	doi = {10.1007/978-3-642-38236-9_17},
+	editor = {Chan, T-H. Hubert and Lau, Lap Chi and Trevisan, Luca},
+	pages = {181--192},
+	publisher = {Springer},
+	title = {Computing with and without Arbitrary Large Numbers},
+	year = {2013},
+	bdsk-url-1 = {https://doi.org/10.1007/978-3-642-38236-9_17}}
+
+@article{s-nlbrm-88,
+	abstract = {For on-line random-access machines under logarithmic cost, the simple task of storing arbitrary binary inputs has nonlinear complexity. Even if all kinds of powerful internal operations are admitted and reading of storage locations is free of charge, just successively changing the storage contents for properly storing arbitrary n-bit inputs requires an average cost of order n · log*n.},
+	author = {Sch{\"o}nhage, Arnold},
+	date-added = {2025-07-03 16:01:56 -0500},
+	date-modified = {2025-07-03 16:02:21 -0500},
+	doi = {10.1145/44483.44492},
+	journal = {J. ACM},
+	number = {3},
+	pages = {748--754},
+	title = {A nonlinear lower bound for random-access machines under logarithmic cost},
+	volume = {35},
+	year = {1988},
+	bdsk-url-1 = {https://doi.org/10.1145/44483.44492}}
 
 @inproceedings{ckpps-facsd-16,
 	arxiv = {1608.03270},
@@ -18,7 +341,8 @@
 	doi = {10.1109/FOCS.2016.69},
 	pages = {583--592},
 	title = {Faster Algorithms for Computing the Stationary Distribution, Simulating Random Walks, and More},
-	year = {2016}}
+	year = {2016},
+	bdsk-url-1 = {https://doi.org/10.1109/FOCS.2016.69}}
 
 @inproceedings{ckkpp-sdlsn-18,
 	arxiv = {1811.10722},
@@ -30,7 +354,7 @@
 	pages = {898--909},
 	title = {Solving Directed {Laplacian} Systems in Nearly-Linear Time through Sparse {LU} Factorizations},
 	year = {2018},
-	Bdsk-Url-1 = {https://doi.org/10.1109/FOCS.2018.00089}}
+	bdsk-url-1 = {https://doi.org/10.1109/FOCS.2018.00089}}
 
 @article{b-simig-68,
 	author = {Bareiss, Erwin H.},
@@ -44,7 +368,7 @@
 	title = {{Sylvester's} Identity and multistep integer-preserving {Gaussian} elimination},
 	volume = {22},
 	year = {1968},
-	Bdsk-Url-1 = {https://doi.org/10.2307/2004533}}
+	bdsk-url-1 = {https://doi.org/10.2307/2004533}}
 
 @article{ay-msnda-13,
 	author = {Alon, Noga and Yuster, Raphael},
@@ -59,7 +383,7 @@
 	title = {Matrix Sparsification and Nested Dissection over Arbitrary Fields},
 	volume = {60},
 	year = {2013},
-	Bdsk-Url-1 = {https://doi.org/10.1145/2508028.2505989}}
+	bdsk-url-1 = {https://doi.org/10.1145/2508028.2505989}}
 
 @inproceedings{ay-slstn-10,
 	author = {Alon, Noga and Yuster, Raphael},
@@ -72,7 +396,7 @@
 	pages = {225--234},
 	title = {Solving linear systems through nested dissection},
 	year = {2010},
-	Bdsk-Url-1 = {https://doi.org/10.1109/FOCS.2010.28}}
+	bdsk-url-1 = {https://doi.org/10.1109/FOCS.2010.28}}
 
 @inproceedings{l-ptfmm-14,
 	author = {Le~Gall, Fran{\c c}ois},
@@ -83,7 +407,7 @@
 	pages = {296--303},
 	title = {Powers of tensors and fast matrix multiplication},
 	year = {2014},
-	Bdsk-Url-1 = {https://doi.org/10.1145/2608628.2608664}}
+	bdsk-url-1 = {https://doi.org/10.1145/2608628.2608664}}
 
 @article{j-easps-77,
 	author = {Johnson, Donald B.},
@@ -96,7 +420,7 @@
 	title = {Efficient algorithms for shortest paths in sparse networks},
 	volume = {24},
 	year = {1977},
-	Bdsk-Url-1 = {https://doi.org/10.1145/321992.321993}}
+	bdsk-url-1 = {https://doi.org/10.1145/321992.321993}}
 
 @article{ek-tiaen-72,
 	author = {Edmonds, Jack and Karp, Richard M.},
@@ -110,7 +434,7 @@
 	title = {Theoretical improvements in algorithmic efficiency of network flow problems},
 	volume = {19},
 	year = {1972},
-	Bdsk-Url-1 = {https://doi.org/10.1145/321694.321699}}
+	bdsk-url-1 = {https://doi.org/10.1145/321694.321699}}
 
 @article{t-stust-71,
 	author = {Tomizawa, Nobuaki},
@@ -124,7 +448,7 @@
 	title = {On some techniques useful for solution of transportation network problems},
 	volume = {1},
 	year = {1971},
-	Bdsk-Url-1 = {https://doi.org/10.1002/net.3230010206}}
+	bdsk-url-1 = {https://doi.org/10.1002/net.3230010206}}
 
 @article{w-pdmia-67,
 	author = {Waite, William M.},
@@ -138,7 +462,7 @@
 	title = {Path detection in multidimensional iterative arrays},
 	volume = {14},
 	year = {1967},
-	Bdsk-Url-1 = {https://doi.org/10.1145/321386.321392}}
+	bdsk-url-1 = {https://doi.org/10.1145/321386.321392}}
 
 @phdthesis{i-tdgtv-87,
 	author = {Iwano, Kazuo},
@@ -149,7 +473,7 @@
 	title = {Two-Dimensional Dynamic Graphs and their {VLSI} Applications},
 	url = {https://search.proquest.com/docview/303485362},
 	year = {1987},
-	Bdsk-Url-1 = {https://search.proquest.com/docview/303485362}}
+	bdsk-url-1 = {https://search.proquest.com/docview/303485362}}
 
 @article{kmw-ocure-67,
 	author = {Karp, Richard M. and Miller, Raymond E. and Winograd, Shmuel},
@@ -164,7 +488,7 @@
 	title = {The organization of computations for uniform recurrence equations},
 	volume = {14},
 	year = {1967},
-	Bdsk-Url-1 = {https://doi.org/10.1145/321406.321418}}
+	bdsk-url-1 = {https://doi.org/10.1145/321406.321418}}
 
 @inproceedings{is-tcigw-87,
 	author = {Iwano, Kazuo and Steiglitz, Kenneth},
@@ -176,7 +500,7 @@
 	read = {1},
 	title = {Testing for cycles in infintie graphs with periodic structure},
 	year = {1987},
-	Bdsk-Url-1 = {https://doi.org/10.1145/28395.28401}}
+	bdsk-url-1 = {https://doi.org/10.1145/28395.28401}}
 
 @article{rk-riati-88,
 	author = {Rao, Sailesh K. and Kailath, Thomas},
@@ -191,7 +515,7 @@
 	title = {Regular iterative algorithms and their implementation on processor arrays},
 	volume = {76},
 	year = {1988},
-	Bdsk-Url-1 = {https://doi.org/10.1109/5.4402}}
+	bdsk-url-1 = {https://doi.org/10.1109/5.4402}}
 
 @article{fw-tams-94,
 	author = {Fredman, Michael L. and Willard, Dan E.},
@@ -205,21 +529,7 @@
 	title = {Trans-dichotomous algorithms for minimum spanning trees and shortest paths},
 	volume = {48},
 	year = {1994},
-	Bdsk-Url-1 = {https://doi.org/10.1016/S0022-0000(05)80064-9}}
-
-@incollection{e-mms-90,
-	author = {van Emde~Boas, Peter},
-	booktitle = {Algorithms and Complexity},
-	date-added = {2019-08-14 20:25:40 -0500},
-	date-modified = {2019-08-14 20:26:55 -0500},
-	doi = {10.1016/B978-0-444-88071-0.50006-0},
-	pages = {1--36},
-	read = {1},
-	series = {Handbook of Theoretical Computer Science},
-	title = {Machine Models and Simulations},
-	volume = {1},
-	year = {1990},
-	Bdsk-Url-1 = {https://doi.org/10.1016/B978-0-444-88071-0.50006-0}}
+	bdsk-url-1 = {https://doi.org/10.1016/S0022-0000(05)80064-9}}
 
 @article{cr-tbram-73,
 	author = {Cook, Stephen A. and Reckhow, Robert A.},
@@ -234,7 +544,7 @@
 	title = {Time Bounded Random Access Machines},
 	volume = {7},
 	year = {1973},
-	Bdsk-Url-1 = {https://doi.org/10.1016/S0022-0000(73)80029-7}}
+	bdsk-url-1 = {https://doi.org/10.1016/S0022-0000(73)80029-7}}
 
 @inproceedings{w-dnstm-83,
 	author = {Wiedermann, Juraj},
@@ -257,7 +567,7 @@
 	title = {Fast Simulation of Turing Machines by Random Access Machines},
 	volume = {17},
 	year = {1988},
-	Bdsk-Url-1 = {https://doi.org/10.1137/0217005}}
+	bdsk-url-1 = {https://doi.org/10.1137/0217005}}
 
 @article{r-rrcs-91,
 	author = {Robson, John M.},
@@ -271,7 +581,7 @@
 	title = {An {$O(T\log T)$} Reduction from {RAM} Computations to Satisfiability},
 	volume = {82},
 	year = {1991},
-	Bdsk-Url-1 = {https://doi.org/10.1016/0304-3975(91)90177-4}}
+	bdsk-url-1 = {https://doi.org/10.1016/0304-3975(91)90177-4}}
 
 @article{pf-racm-79,
 	author = {Pippenger, Nicholas and Fischer, Michael J.},
@@ -285,7 +595,7 @@
 	title = {Relations among complexity measures},
 	volume = {26},
 	year = {1979},
-	Bdsk-Url-1 = {https://doi.org/10.1145/322123.322138}}
+	bdsk-url-1 = {https://doi.org/10.1145/322123.322138}}
 
 @article{c-spfrnc-88,
 	author = {Cook, Stephen A.},
@@ -299,7 +609,7 @@
 	title = {Short propositional formulas represent nondeterministic computations},
 	volume = {26},
 	year = {1988},
-	Bdsk-Url-1 = {https://doi.org/10.1016/0020-0190(88)90152-4}}
+	bdsk-url-1 = {https://doi.org/10.1016/0020-0190(88)90152-4}}
 
 @article{l-usp-73,
 	author = {Levin, Leonid A.},
@@ -314,7 +624,7 @@
 	url = {http://mi.mathnet.ru/eng/ppi/v9/i3/p115},
 	volume = {9},
 	year = {1973},
-	Bdsk-Url-1 = {http://mi.mathnet.ru/eng/ppi/v9/i3/p115}}
+	bdsk-url-1 = {http://mi.mathnet.ru/eng/ppi/v9/i3/p115}}
 
 @inproceedings{c-ctpp-71,
 	author = {Cook, Stephen},
@@ -326,7 +636,7 @@
 	read = {1},
 	title = {The complexity of theorem proving procedures},
 	year = {1971},
-	Bdsk-Url-1 = {https://doi.org/10.1145/800157.805047}}
+	bdsk-url-1 = {https://doi.org/10.1145/800157.805047}}
 
 @book{k-fa-97,
 	author = {Knuth, Donald E.},
@@ -352,7 +662,7 @@
 	title = {Labeled shortest paths in digraphs with negative and positive edge weights},
 	volume = {43},
 	year = {2009},
-	Bdsk-Url-1 = {https://doi.org/10.1051/ita/2009011}}
+	bdsk-url-1 = {https://doi.org/10.1051/ita/2009011}}
 
 @mastersthesis{f-sscl-78,
 	author = {Fajuyigbe, Oladele},
@@ -364,7 +674,7 @@
 	title = {The shortest strings in a context-free langauge},
 	url = {http://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/9z903315x},
 	year = {1978},
-	Bdsk-Url-1 = {http://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/9z903315x}}
+	bdsk-url-1 = {http://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/9z903315x}}
 
 @misc{gr-cpqws-17,
 	arxiv = {1612.08872v2},
@@ -389,7 +699,7 @@
 	title = {Subgraph Queries by Context-free Grammars},
 	volume = {5},
 	year = {2008},
-	Bdsk-Url-1 = {https://doi.org/10.1515/jib-2008-100}}
+	bdsk-url-1 = {https://doi.org/10.1515/jib-2008-100}}
 
 @misc{h-qpguc-16,
 	arxiv = {1502.02242v2},
@@ -412,7 +722,7 @@
 	read = {1},
 	title = {Conjunctive Context-Free Path Queries},
 	year = {2014},
-	Bdsk-Url-1 = {https://doi.org/10.5441/002/icdt.2014.15}}
+	bdsk-url-1 = {https://doi.org/10.5441/002/icdt.2014.15}}
 
 @inproceedings{mj-afsts-75,
 	author = {McLean, Michael J. and Johnston, Daniel B.},
@@ -427,7 +737,7 @@
 	series = {Lecture Notes Math.},
 	title = {An algorithm for finding the shortest terminal strings which can be produced from non-terminals in context-free grammars},
 	year = {1975},
-	Bdsk-Url-1 = {https://doi.org/10.1007/BFb0069557}}
+	bdsk-url-1 = {https://doi.org/10.1007/BFb0069557}}
 
 @article{mr-icccr-00,
 	author = {Melski, David and Reps, Thomas},
@@ -443,7 +753,7 @@
 	title = {Interconvertibility of a class of set constraints and context-free-language reachability},
 	volume = {248},
 	year = {2000},
-	Bdsk-Url-1 = {https://dx.doi.org/10.1016/S0304-3975(00)00049-9}}
+	bdsk-url-1 = {https://dx.doi.org/10.1016/S0304-3975(00)00049-9}}
 
 @inproceedings{y-gmdt-90,
 	author = {Yannakakis, Mihalis},
@@ -457,7 +767,7 @@
 	read = {1},
 	title = {Graph-theoretic methods in database theory},
 	year = {1990},
-	Bdsk-Url-1 = {https://dx.doi.org/10.1145/298514.298576}}
+	bdsk-url-1 = {https://dx.doi.org/10.1145/298514.298576}}
 
 @article{bjm-flcpp-00,
 	author = {Barrett, Chris and Jacob, Riko and Marathe, Madhav},
@@ -473,7 +783,7 @@
 	title = {Formal-language-constrained path problems},
 	volume = {30},
 	year = {2000},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1137/S0097539798337716}}
+	bdsk-url-1 = {http://dx.doi.org/10.1137/S0097539798337716}}
 
 @article{c-sarsm-08,
 	author = {Chaudhuri, Swarat},
@@ -488,7 +798,7 @@
 	title = {Subcubic algorithms for recursive state machines},
 	volume = {43},
 	year = {2008},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1328438.1328460}}
+	bdsk-url-1 = {http://dx.doi.org/10.1145/1328438.1328460}}
 
 @article{dek-spp-82,
 	author = {Dolev, Danny and Even, Shimon and Karp, Richard M.},
@@ -503,7 +813,7 @@
 	title = {On the security of ping-ping protocols},
 	volume = {55},
 	year = {1982},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1016/S0019-9958(82)90401-6}}
+	bdsk-url-1 = {http://dx.doi.org/10.1016/S0019-9958(82)90401-6}}
 
 @inproceedings{y-pctum-77,
 	author = {Yao, Andrew C. C.},
@@ -534,7 +844,7 @@
 	type = {{Tech. Rep.}},
 	url = {http://domino.mpi-inf.mpg.de/internet/reports.nsf/NumberView/1995-1-025},
 	year = {1995},
-	Bdsk-Url-1 = {http://domino.mpi-inf.mpg.de/internet/reports.nsf/NumberView/1995-1-025}}
+	bdsk-url-1 = {http://domino.mpi-inf.mpg.de/internet/reports.nsf/NumberView/1995-1-025}}
 
 @article{abf-mnbf-96,
 	author = {Alon, Noga and Bradford, Phillip G. and Fleischer, Rudolf},
