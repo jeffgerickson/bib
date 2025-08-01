@@ -1,12 +1,71 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jeff Erickson at 2025-07-03 17:12:51 -0500 
+%% Created for Jeff Erickson at 2025-07-27 13:45:29 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{v-ahlb-03,
+	abstract = {This article deals with randomized allocation processes placing sequentially n balls into n bins. We consider multiple-choice algorithms that choose d locations (bins) for each ball at random, inspect the content of these locations, and then place the ball into one of them, for example, in a location with minimum number of balls. The goal is to achieve a good load balancing. This objective is measured in terms of the maximum load, that is, the maximum number of balls in the same bin.Multiple-choice algorithms have been studied extensively in the past. Previous analyses typically assume that the d locations for each ball are drawn uniformly and independently from the set of all bins. We investigate whether a nonuniform or dependent selection of the d locations of a ball may lead to a better load balancing. Three types of selection, resulting in three classes of algorithms, are distinguished: (1) uniform and independent, (2) nonuniform and independent, and (3) nonuniform and dependent.Our first result shows that the well-studied uniform greedy algorithm (class 1) does not obtain the smallest possible maximum load. In particular, we introduce a nonuniform algorithm (class 2) that obtains a better load balancing. Surprisingly, this algorithm uses an unfair tie-breaking mechanism, called Always-Go-Left, resulting in an asymmetric assignment of the balls to the bins. Our second result is a lower bound showing that a dependent allocation (class 3) cannot yield significant further improvement.Our upper and lower bounds on the maximum load are tight up to additive constants, proving that the Always-Go-Left algorithm achieves an almost optimal load balancing among all sequential multiple-choice algorithm. Furthermore, we show that the results for the Always-Go-Left algorithm can be generalized to allocation processes with more balls than bins and even to infinite processes in which balls are inserted and deleted by an oblivious adversary.},
+	author = {V{\"o}cking, Berthold},
+	date-added = {2025-07-27 13:43:51 -0500},
+	date-modified = {2025-07-27 13:44:07 -0500},
+	doi = {10.1145/792538.792546},
+	journal = {J. ACM},
+	keywords = {probabilistic analysis, balls and bins processes, Randomized algorithms},
+	number = {4},
+	pages = {568--589},
+	title = {How asymmetry helps load balancing},
+	volume = {50},
+	year = {2003}}
+
+@article{pt-psth-12,
+	abstract = {Randomized algorithms are often enjoyed for their simplicity, but the hash functions used to yield the desired theoretical guarantees are often neither simple nor practical. Here we show that the simplest possible tabulation hashing provides unexpectedly strong guarantees.The scheme itself dates back to Zobrist in 1970 who used it for game playing programs. Keys are viewed as consisting of c characters. We initialize c tables H1, ..., Hc mapping characters to random hash codes. A key x = (x1, ..., xc) is hashed to H1[x1] ⊕ ⋯ ⊕ Hc[xc], where ⊕ denotes bit-wise exclusive-or.While this scheme is not even 4-independent, we show that it provides many of the guarantees that are normally obtained via higher independence, for example, Chernoff-type concentration, min-wise hashing for estimating set intersection, and cuckoo hashing.},
+	arxiv = {1011.5200},
+	author = {P{\v a}tra{\c s}cu, Mihai and Thorup, Mikkel},
+	date-added = {2025-07-27 13:07:32 -0500},
+	date-modified = {2025-07-27 13:08:53 -0500},
+	doi = {10.1145/2220357.2220361},
+	journal = {J. ACM},
+	keywords = {Hashing, tabulation},
+	number = {3},
+	pages = {14:1--14:50},
+	title = {The Power of Simple Tabulation Hashing},
+	volume = {59},
+	year = {2012},
+	bdsk-url-1 = {https://doi.org/10.1145/2220357.2220361}}
+
+@article{adw-eehfschws-14,
+	abstract = {It is shown that for cuckoo hashing with a stash as proposed by Kirsch et al. (Proc. 16th European Symposium on Algorithms (ESA), pp. 611---622, Springer, Berlin, 2008 ) families of very simple hash functions can be used, maintaining the favorable performance guarantees: with constant stash size  s  the probability of a rehash is  O (1/  n s +1), the lookup time and the deletion time are  O (  s ) in the worst case, and the amortized expected insertion time is  O (  s ) as well. Instead of the full randomness needed for the analysis of Kirsch et al. and of Kutzelnigg (Discrete Math. Theor. Comput. Sci., 12(3):81---102, 2010 ) (resp.  (log  n )-wise independence for standard cuckoo hashing) the new approach even works with 2-wise independent hash families as building blocks. Both construction and analysis build upon the work of Dietzfelbinger and Woelfel (Proc. 35th ACM Symp. on Theory of Computing (STOC), pp. 629---638, 2003 ). The analysis, which can also be applied to the fully random case, utilizes a graph counting argument and is much simpler than previous proofs. The results can be generalized to situations where the stash size is non-constant.},
+	arxiv = {1204.4431},
+	author = {Aum{\"u}ller, Martin and Dietzfelbinger, Martin and Woelfel, Philipp},
+	date-added = {2025-07-27 13:02:49 -0500},
+	date-modified = {2025-07-27 13:03:21 -0500},
+	doi = {10.1007/s00453-013-9840-x},
+	journal = {Algorithmica},
+	keywords = {Cuckoo hashing, Data structures, Hash functions, Hash table, Random graphs, Randomized algorithms},
+	number = {3},
+	pages = {428--456},
+	title = {Explicit and Efficient Hash Families Suffice for Cuckoo Hashing with a Stash},
+	volume = {70},
+	year = {2014},
+	bdsk-url-1 = {https://doi.org/10.1007/s00453-013-9840-x}}
+
+@article{pp-uhcto-08,
+	abstract = { Many algorithms and data structures employing hashing have been analyzed under the uniform hashing assumption, i.e., the assumption that hash functions behave like truly random functions. Starting with the discovery of universal hash functions, many researchers have studied to what extent this theoretical ideal can be realized by hash functions that do not take up too much space and can be evaluated quickly. In this paper we present an almost ideal solution to this problem: a hash function \$h: U\rightarrow V\$ that, on any set of n inputs, behaves like a truly random function with high probability, can be evaluated in constant time on a RAM and can be stored in \$(1+\epsilon)n\log |V| + O(n+\log\log |U|)\$ bits. Here \$\epsilon\$ can be chosen to be any positive constant, so this essentially matches the entropy lower bound. For many hashing schemes this is the first hash function that makes their uniform hashing analysis come true, with high probability, without incurring overhead in time or space. },
+	author = {Pagh, Anna and Pagh, Rasmus},
+	date-added = {2025-07-27 12:55:59 -0500},
+	date-modified = {2025-07-27 12:56:17 -0500},
+	doi = {10.1137/060658400},
+	journal = {SIAM J. Comput.},
+	number = {1},
+	pages = {85--96},
+	title = {Uniform Hashing in Constant Time and Optimal Space},
+	volume = {38},
+	year = {2008}}
 
 @inproceedings{nw-ct-20,
 	author = {Nugent, Coleman and Wortman, Kevin A.},
@@ -258,7 +317,8 @@
 	doi = {10.1145/100216.100217},
 	pages = {1--7},
 	title = {{BLASTING} through the Information Theoretic Barrier with {FUSION} {TREES}},
-	year = {1990}}
+	year = {1990},
+	bdsk-url-1 = {https://doi.org/10.1145/100216.100217}}
 
 @article{fks-sstwc-84,
 	author = {Fredman, Michael L. and Koml\'{o}s, J\'{a}nos and Szemer\'{e}di, Endre},
