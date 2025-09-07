@@ -1,12 +1,100 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jeff Erickson at 2025-07-27 13:45:29 -0500 
+%% Created for Jeff Erickson at 2025-09-07 05:44:23 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@techreport{bgs-h-72,
+	author = {Beeler, Michael and Gosper, R. William and Schroeppel, Richard C.},
+	date-added = {2025-09-07 05:30:29 -0500},
+	date-modified = {2025-09-07 05:44:23 -0500},
+	institution = {MIT AI Lab},
+	number = {AIM-239},
+	title = {{HAKMEM}},
+	type = {Tech. Rep.},
+	url = {http://hdl.handle.net/1721.1/6086},
+	year = {1972}}
+
+@article{f-tm-60,
+	author = {Fredkin, Edward},
+	date-added = {2025-09-06 21:09:16 -0500},
+	date-modified = {2025-09-07 04:42:21 -0500},
+	doi = {10.1145/367390.367400},
+	journal = {Commun. ACM},
+	number = {9},
+	pages = {490--499},
+	title = {Trie memory},
+	volume = {3},
+	year = {1960},
+	bdsk-url-1 = {https://doi.org/10.1145/367390.367400}}
+
+@inproceedings{b-fsuvl-59,
+	abstract = {Many computer applications require the storage of large amounts of information within the computer's memory where it will be readily available for reference and updating. Quite commonly, more storage space is required than is available in the computer's high-speed working memory. It is, therefore, a common practice to equip computers with magnetic tapes, disks, or drums, or a combination of these to provide additional storage. This additional storage is always slower in operation than the computer's working memory and therefore care must be taken when using it to avoid excessive operating time.},
+	author = {de la Briandais, Rene},
+	booktitle = {Proc. Western Joint Computer Conf.},
+	date-added = {2025-09-06 21:06:48 -0500},
+	date-modified = {2025-09-06 21:14:27 -0500},
+	doi = {10.1145/1457838.1457895},
+	keywords = {trie},
+	pages = {295--298},
+	title = {File searching using variable length keys},
+	year = {1959},
+	bdsk-url-1 = {https://doi.org/10.1145/1457838.1457895}}
+
+@article{t-uglgt-12,
+	author = {Thue, Axel},
+	date-added = {2025-09-06 20:09:15 -0500},
+	date-modified = {2025-09-07 04:52:08 -0500},
+	journal = {Skrifter utgit av Videnskabsselskabet I Christiania},
+	keywords = {trie},
+	pages = {1--67},
+	title = {{\"U}ber die gegenseitige {Lage} gleicher {Teile} gewisser {Zeichenreihen}},
+	url = {https://archive.org/details/skrifterutgitavv121chri/page/n11/mode/2up},
+	volume = {1},
+	year = {1912},
+	bdsk-url-1 = {https://archive.org/details/skrifterutgitavv121chri/page/n11/mode/2up}}
+
+@inproceedings{e-poflt-75,
+	abstract = {We present a data structure, based upon a stratified binary tree, which enables us to manipulate on-line a priority queue whose priorities are selected from the interval 1...n, with an average and worst case processing time of O(log log n) per instruction. The structure is used to obtain a mergeable heap whose time requirements are about as good.},
+	author = {van Emde Boas, Peter},
+	booktitle = {Proc. 16th Ann. IEEE Symp. Found. Comput. Sci.},
+	date-added = {2025-09-06 19:56:45 -0500},
+	date-modified = {2025-09-06 21:14:26 -0500},
+	doi = {10.1109/SFCS.1975.26},
+	pages = {75--84},
+	title = {Preserving order in a forest in less than logarithmic time},
+	year = {1975},
+	bdsk-url-1 = {https://doi.org/10.1109/SFCS.1975.26}}
+
+@inproceedings{hrr-sosfd-25,
+	abstract = { Abstract Fredman proposed in 1976 the following algorithmic problem: Given are a ground set X, some partial order P over X, and some comparison oracle OL that specifies a linear order L over X that extends P. A query to OL has as input distinct x,x` ϵ X and outputs whether x <L x' or vice versa. If we denote by e (P ) the number of linear orders that extend P, then it follows from basic information theory that log e (P ) is a worst-case lower bound on the number of queries needed to output the sorted order of X. Fredman did not specify in what form the partial order is given. Haeupler, Hlad{\'\i}k, Iacono, Rozhon, Tarjan, and T{\v e}tek ('24) propose to assume as input a directed acyclic graph, G, with m edges and n = |X| vertices. Denote by PG the partial order induced by G. Their algorithmic performance is measured in running time and the number of queries used, where they use Θ( m + n + log e (PG)) time and Θ(log e (PG)) queries to output X in its sorted order. Their algorithm is worst-case optimal, both in terms of running time and queries. Their analysis relies upon sophisticated counting arguments using entropy, recursively defined sets defined over the run of their algorithm, and vertices in the graph that they identify as bottlenecks for sorting. We do away with sophistication. We show that when the input is a directed acyclic graph then the problem admits a simple solution using Θ(m + n + log e (PG)) time and Θ(log e (PG)) queries. Especially our proofs are much simpler as we avoid the usage of advanced charging arguments, and instead rely upon two observations. },
+	arxiv = {2407.21591},
+	author = {van der Hoog, Ivor and Rotenberg, Eva and Rutschmann, Daniel},
+	booktitle = {Proc. 8th Symp. Simplicity in Algorithms (SOSA)},
+	date-added = {2025-08-16 15:24:40 -0500},
+	date-modified = {2025-08-16 15:26:12 -0500},
+	doi = {10.1137/1.9781611978315.26},
+	pages = {350-355},
+	title = {Simpler Optimal Sorting from a Directed Acyclic Graph},
+	year = {2025},
+	bdsk-url-1 = {https://doi.org/10.1137/1.9781611978315.26}}
+
+@inproceedings{hhirt-fssup-25,
+	abstract = { Abstract We consider the problem of sorting n items, given the outcomes of m pre-existing comparisons. We present a simple and natural deterministic algorithm that runs in O(m + log T ) time and does O(log T ) comparisons, where T is the number of total orders consistent with the pre-existing comparisons. Our running time and comparison bounds are best possible up to constant factors, thus resolving a problem that has been studied intensely since 1976 (Fredman, Theoretical Computer Science). The best previous algorithm with a bound of O(log T ) on the number of comparisons has a time bound of O(n2.5) and is more complicated. Our algorithm combines three classic algorithms: topological sort, heapsort with the right kind of heap, and efficient search in a sorted list. It outputs the items in sorted order one by one. It can be modified to stop early, thereby solving the important and more general top-k sorting problem: Given k and the outcomes of some pre-existing comparisons, output the smallest k items in sorted order. The modified algorithm solves the top-k sorting problem in minimum time and comparisons, to within constant factors. },
+	arxiv = {2404.04552},
+	author = {Haeupler, Bernhard and Hlad{\'\i}k, Richard and Iacono, John and Rozho{\v n}, V{\'a}clav and Tarjan, Robert E. and T{\v e}tek, Jakub},
+	booktitle = {Proc. 36th Ann. ACM-SIAM Symp. Discrete Algorithms (SODA)},
+	date-added = {2025-08-16 15:21:51 -0500},
+	date-modified = {2025-08-16 15:38:18 -0500},
+	doi = {10.1137/1.9781611978322.134},
+	pages = {3953--3973},
+	title = {Fast and Simple Sorting Using Partial Information},
+	year = {2025},
+	bdsk-url-1 = {https://doi.org/10.1137/1.9781611978322.134}}
 
 @article{v-ahlb-03,
 	abstract = {This article deals with randomized allocation processes placing sequentially n balls into n bins. We consider multiple-choice algorithms that choose d locations (bins) for each ball at random, inspect the content of these locations, and then place the ball into one of them, for example, in a location with minimum number of balls. The goal is to achieve a good load balancing. This objective is measured in terms of the maximum load, that is, the maximum number of balls in the same bin.Multiple-choice algorithms have been studied extensively in the past. Previous analyses typically assume that the d locations for each ball are drawn uniformly and independently from the set of all bins. We investigate whether a nonuniform or dependent selection of the d locations of a ball may lead to a better load balancing. Three types of selection, resulting in three classes of algorithms, are distinguished: (1) uniform and independent, (2) nonuniform and independent, and (3) nonuniform and dependent.Our first result shows that the well-studied uniform greedy algorithm (class 1) does not obtain the smallest possible maximum load. In particular, we introduce a nonuniform algorithm (class 2) that obtains a better load balancing. Surprisingly, this algorithm uses an unfair tie-breaking mechanism, called Always-Go-Left, resulting in an asymmetric assignment of the balls to the bins. Our second result is a lower bound showing that a dependent allocation (class 3) cannot yield significant further improvement.Our upper and lower bounds on the maximum load are tight up to additive constants, proving that the Always-Go-Left algorithm achieves an almost optimal load balancing among all sequential multiple-choice algorithm. Furthermore, we show that the results for the Always-Go-Left algorithm can be generalized to allocation processes with more balls than bins and even to infinite processes in which balls are inserted and deleted by an oblivious adversary.},
@@ -20,7 +108,8 @@
 	pages = {568--589},
 	title = {How asymmetry helps load balancing},
 	volume = {50},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://doi.org/10.1145/792538.792546}}
 
 @article{pt-psth-12,
 	abstract = {Randomized algorithms are often enjoyed for their simplicity, but the hash functions used to yield the desired theoretical guarantees are often neither simple nor practical. Here we show that the simplest possible tabulation hashing provides unexpectedly strong guarantees.The scheme itself dates back to Zobrist in 1970 who used it for game playing programs. Keys are viewed as consisting of c characters. We initialize c tables H1, ..., Hc mapping characters to random hash codes. A key x = (x1, ..., xc) is hashed to H1[x1] ⊕ ⋯ ⊕ Hc[xc], where ⊕ denotes bit-wise exclusive-or.While this scheme is not even 4-independent, we show that it provides many of the guarantees that are normally obtained via higher independence, for example, Chernoff-type concentration, min-wise hashing for estimating set intersection, and cuckoo hashing.},
@@ -65,7 +154,8 @@
 	pages = {85--96},
 	title = {Uniform Hashing in Constant Time and Optimal Space},
 	volume = {38},
-	year = {2008}}
+	year = {2008},
+	bdsk-url-1 = {https://doi.org/10.1137/060658400}}
 
 @inproceedings{nw-ct-20,
 	author = {Nugent, Coleman and Wortman, Kevin A.},
@@ -298,9 +388,9 @@
 	abstract = {Let S denote a set of N records whose keys are distinct nonnegative integers less than some initially specified bound M. This paper introduces a new data structure, called the y-fast trie, which uses Θ(N) space and Θ(log log M) time for range queries on a random access machine. We will also define a simpler but less efficient structure, called the x-fast trie.},
 	author = {Willard, Dan E.},
 	date-added = {2025-03-21 08:34:15 -0500},
-	date-modified = {2025-03-21 08:34:55 -0500},
+	date-modified = {2025-09-06 19:55:44 -0500},
 	doi = {10.1016/0020-0190(83)90075-3},
-	journal = {Inf. Process. Lett.},
+	journal = {Inf. Proc. Lett.},
 	keywords = {Priority queues, stratified trees (often called `Van Emde Boas trees'), sparse tables, special search algorithm of Fredmann, Komol{\'o}s and Szemer{\'e}di},
 	number = {2},
 	pages = {81--84},
